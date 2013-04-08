@@ -1,3 +1,12 @@
+footer {
+  background-color: black;
+  color: white;
+}
 .hero-background {
-	background-image: url(http://farm9.staticflickr.com/8466/8139078216_ac482a0e75_b.jpg);
+  background: URL('http://farm9.staticflickr.com/8466/8139078216_ac482a0e75_b.jpg');
+  background-repeat: none;
+}
+.top-bar {
+  padding-left: 15%;
+  padding-right: 15%;
 }
