@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Polarbot</title>
+  <title>Polarbot Gallery</title>
 
   <link rel="stylesheet" href="static/foundation/css/normalize.css" />
   <link rel="stylesheet" href="static/foundation/css/foundation.css" />
@@ -15,8 +15,7 @@
   <script src="static/foundation/js/vendor/custom.modernizr.js"></script>
 
 </head>
-<body>
-  <nav class="top-bar">
+<nav class="top-bar">
   <ul class="title-area">
     <!-- Title Area -->
     <li class="name">
@@ -30,7 +29,7 @@
     <!-- Left Nav Section -->
     <ul class="left">
       <li class="divider"></li>
-      <li><a href="gallery.html">Visualisations</a></li>
+      <li class="active"><a href="gallery.html">Visualisations</a></li>
       <li class="divider"></li>
       <li><a href="getpolarbot.html">Get a Polarbot</a></li>
       <li class="divider"></li>
@@ -63,26 +62,16 @@
   </section>
 </nav>
 
-<!-- Name and Strapline -->
+<!-- The gallery shows off Visualisations of the community - Drawing previews or ideally Photos people contributed of final pieces which are composed of a Data Source and a Pattern. -->
+<body>
   <div class="row">
-    <div class="six columns">
-      <h2>Polarbot</h2>
-      <h4 class="subheader">Make meaning from data through patterns. Start visualising your world with a polarbot.</p>
-    </div>
+    <h2>Visualisations</h2>
+    <h4 class="subheader">Visualisations are drawn by Polarbots by applying algorithmic patterns to data sources</p>
   </div>
 
-    
-<!-- Section which explains what Polarbot is and what people can do with it. -->
-  <div class="row hero-background">
-    <div class="four column">
-      <h3>The Polarbot draws abstract patterns from real-world data. It's a drawing robot which scales to any size and let's you experiment with <a href="patterns.html">algorithms</a> and <a href="sources.html">data visualisations</a>.</h3>
-      <p>Currently there are <em>46</em> bots living in people's homes, sketching <em>5</em> visualisations.</p>
-    </div>
-  </div>
-
-<!-- Section for current and latest drawings -->
-  <div class="row">
+    <div class="row">
     <h2>Latest Visualisations</h2>
+    <p>Drawn by Polarbots around the world</p>
   </div>
   <div class="row">
     <ul class="block-grid three-up">
@@ -102,9 +91,31 @@
     </ul>
 </div>
 
-<!-- Section for latest and polular patterns -->
 <div class="row">
     <h2>Popular Patterns</h2>
+    <p>Algorithmic patterns which abstract data</p>
+    </div>
+  <div class="row">
+    <ul class="block-grid three-up">
+      <li>
+        <img src="http://farm9.staticflickr.com/8401/8627927189_0213961d3b_n.jpg">
+        <p>[Pattern Name] by [Name]</p>
+      </li>
+      <li>
+        <img src="http://farm9.staticflickr.com/8534/8629035268_b54c316abd_n.jpg">
+        <p>[Pattern Name] by [Name]</p>
+      </li>
+      <li>
+        <img src="http://farm9.staticflickr.com/8396/8627918085_f4bff14096_n.jpg">
+        <p>[Pattern Name] by [Name]</p>
+      </li>
+    </ul>
+    <a href="#"><p>Create patterns</p></a>
+</div>
+
+<div class="row">
+    <h2>Real World Data</h2>
+    <p>Good, reliable, open Data Sources to use in projects</p>
     </div>
   <div class="row">
     <ul class="block-grid three-up">
@@ -122,15 +133,7 @@
       </li>
     </ul>
 </div>
-
-<!-- Section to explain process of how people can create own drawings highlighting all the ways people can get involved e.g. pattern making, adding a data source, digital drawing making even if they don't own a bot themselves yet.-->
- <div class="row">
-  <h2>How it works</h2>
-  <p>Section to explain process of how people can create own drawings highlighting all the ways people can get involved e.g. pattern making, adding a data source, digital drawing making even if they don't own a bot themselves yet. e.g. screenshot with data sources going in and outcome: drawing.</p>
-  <a class="button key-action" href="getpolarbot.html">Get a Polarbot</a>
-</div>
-
-
+    
 <footer>
   <div class="row">
     <div class="three columns">
@@ -140,7 +143,7 @@
     </div>
     <div class="three columns">
       <h3>Be Inspired</h3>
-      <p><a href="gallery.html">Gallery</a></p>
+      <p><a href="visualisations.html">Gallery</a></p>
       <p><a href="patternmaker.html">Pattern Maker</a></p>
        <p><a href="sources.html">Demo Sources</a></p>
     </div>
@@ -156,15 +159,18 @@
     </div>
   </div>
 </footer>
-      
-      
-   <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'static/foundation/js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
+
+  </div>
+
+  <script>
+  document.write('<script src=static/foundation/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
   
   <script src="static/foundation/js/foundation.min.js"></script>
+  <script src="static/foundation/js/foundation/foundation.reveal.js"></script>
   <!--
   
   <script src="js/foundation/foundation.js"></script>
@@ -194,9 +200,20 @@
   <script src="js/foundation/foundation.topbar.js"></script>
   
   -->
-  
+
   <script>
-    $(document).foundation();
-  </script>
+  $(document).foundation();
+</script>
+
+<div id="pattern1" class="reveal-modal small">
+  <h2>Pattern Name</h2>
+  <img src="">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec.</p>
+  <p>Created by XXXX added on XXXXX</p>
+  <a href="login.html"class="button" href="accountpage.html">Save this pattern</a>
+  <p>cancel</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
 </body>
 </html>
