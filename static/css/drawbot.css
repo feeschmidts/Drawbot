@@ -16,6 +16,9 @@ footer h3 {
 .hero-background {
   background: URL('http://farm9.staticflickr.com/8466/8139078216_ac482a0e75_b.jpg');
   background-repeat: none;
+ /* width: 100%;*/
+/*  padding-left: 16%;*/
+  height: 500px;
 }
 .top-bar {
   padding-left: 15%;
