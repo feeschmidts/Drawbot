@@ -5,21 +5,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Foundation 4</title>
+  <title>Polarbot</title>
 
   <link rel="stylesheet" href="static/foundation/css/normalize.css" />
-  
   <link rel="stylesheet" href="static/foundation/css/foundation.css" />
+   <link rel="stylesheet" href="static/css/drawbot.css" />
   
 
   <script src="static/foundation/js/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
+  <nav class="top-bar">
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="accountpage.html">Polarbot</a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="divider"></li>
+    </ul>
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-form">
+        <a href="signup.html"class="button" href="#">Create Visualisations</a>
+      </li>
+      <li class="divider hide-for-small"></li>
+      <li><a href="index.html">Logout</a>
+    </ul>
+  </section>
+</nav>
+
+<!-- Name and Strapline -->
+  <div class="row">
+    <h2>Your Polarbot</h2>
+    <h4 class="subheader">Everything you need to create visualisations. Save bot presets, remember Data Sources or add your own, and collect your favourite patterns.</p>
+  </div>
+
 
   <div class="row">
-    <h3>Your Bot's last drawings</h3>
-    <h5>Register your Bot or <a href="purchasebot.html">purchase one here</a>.</h5>
+    <h3>Your bot's last sketches</h3>
+    <h5>Register your Bot or <a href="getpolarbot.html">purchase one here</a>.</h5>
     <form>
       <fieldset>
 
@@ -43,8 +75,9 @@
       </fieldset>
     </form>
   </div>
+
   <div class="row">
-    <h3>Your Data Sources</h3>
+    <h3>Saved Data Sources</h3>
     <div class="large-4 columns">
       <div class="panel tile">
         <h3>Add Source</h3>
@@ -64,9 +97,9 @@
     </div>
   </div>
 
-    <div class="row">
+   <div class="row">
     <h3>Your Patterns</h3>
-    <h5>You don't have any pattern yet. <a href="#">Learn to create pattern</a></h5>
+    <h5>No patterns yet. <a href="create.html">Create pattern</a></h5>
     <!-- <div class="large-4 columns">
       <div class="panel tile">
         <h3>Add Source</h3>
@@ -84,6 +117,7 @@
       </div>
       <p>Last updated</p>
     </div> -->
+  </div>
 
   <div class="row">
     <h3>Your Bot setups</h3>
@@ -104,7 +138,31 @@
     </div>
   </div>
 
+  <footer>
+  <div class="row">
+    <div class="three columns">
+      <h3>Polarbot</h3>
+      <p><a href="login.html">Login</a> / <a href="signup.html">Signup</a><p>
+      <p><a href="howitworks.html">How it works</a></p>
+    </div>
+    <div class="three columns">
+      <h3>Be Inspired</h3>
+      <p><a href="gallery.html">Gallery</a></p>
+      <p><a href="patternmaker.html">Pattern Maker</a></p>
+       <p><a href="sources.html">Demo Sources</a></p>
+    </div>
+    <div class="three columns">
+      <h3>Get Started</h3>
+     <p><a href="getpolarbot.html">Get a Polarbot</a></p>
+     <p><a href="register.html">Register a Bot</a></p>
+     <p><a href="setup.html">Bot Setup</a></p>
+    </div>
+    <div class="three columns">
+      <h3>Contact Us</h3>
+      <p>Polarbot is created by a bunch of peeps. Get in touch here...</p>
+    </div>
   </div>
+</footer>
 
       
       
