@@ -3,9 +3,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-   <meta charset="utf-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Polarbot Kit</title>
+  <title>Polarbot - How it works</title>
 
   <link rel="stylesheet" href="static/foundation/css/normalize.css" />
   <link rel="stylesheet" href="static/foundation/css/foundation.css" />
@@ -32,9 +32,9 @@
       <li class="divider"></li>
       <li><a href="gallery.html">Visualisations</a></li>
       <li class="divider"></li>
-      <li class="active"><a href="getpolarbot.html">Get a Polarbot</a></li>
+      <li><a href="getpolarbot.html">Get a Polarbot</a></li>
       <li class="divider"></li>
-      <li><a href="howitworks.html">How it works</a></li>
+      <li class="active"><a href="howitworks.html">How it works</a></li>
       <li class="divider"></li>
     </ul>
 
@@ -62,20 +62,36 @@
     </ul>
   </section>
 </nav>
-    <!-- Page to descripe Polarbot kit and components. -->
+
+<!-- Page Name -->
   <div class="row">
-    <p>Page to descripe Polarbot kit and components, that it's made in UK apart from the circuit boards ;).</p>
-    <p>Price</p>
-    <a class="button key-action" href="#">Get a kit</a>
+      <h2>How it works</h2>
+      <h4 class="subheader">Experiment with patterns and see visualisations evolve, sketched by your Polarbot. <em>Here is how it works.</em></p>
+    </div>
+
+    
+<!-- Section which explains how the Polarbot works -->
+  <div class="row">
+    <h2>A Diagram of sorts</h2>
+    <h3>A schematic thing that shows the setup of a project.<h3>
+      <p>Every visualisation the Polarbot sketches is 'project'. It is made up of a data source, to which a pattern is applied and a bot setup, so that the Bot knows how large it can draw. A pattern maker lets Users compose visualisations before sending them to polarbots to sketch.</p>
+
+      <p>Data Sources are open data sets like tidal information, weather, temperature or energy readings which are collected in real time.<p>
+      <p>Patterns are ...</p>
+      <p>Bot setups specify how much space the polarbot has space to draw ...</p>
   </div>
 
-<!-- Section for people who might not want tp get a bot, but who may still be interested in it -->
+<!-- Section to explain how to get started. Entice Users to experiment to become more likely to purchase a bot. -->
   <div class="row">
-    <p>Experiment, create visualisations and make your own algorithms.</p>
-    <p>Include links to respective pages</p>
-  </div>
-  
-  <footer>
+    <h2>To get started...</h2>
+    <p>Create your first Sketch Visualisation - experiment with data sources and patterns.</p>
+    <p>(Image of Pattern Maker and link to one)</p>
+
+  <a class="button key-action" href="getpolarbot.html">Get a Polarbot</a>
+</div>
+
+
+<footer>
   <div class="row">
     <div class="three columns">
       <h3>Polarbot</h3>
@@ -100,10 +116,11 @@
     </div>
   </div>
 </footer>
-  
- <script>
+      
+      
+   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  ('__proto__' in {} ? 'static/foundation/js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
   
